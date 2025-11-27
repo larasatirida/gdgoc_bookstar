@@ -17,6 +17,7 @@ const nextConfig = {
         hostname: 'placehold.co',  
       },
     ],
+    unoptimized: true, // Temporary for deploy testing
   },
 };
 
