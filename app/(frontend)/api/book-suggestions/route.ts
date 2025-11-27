@@ -18,7 +18,10 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ success: true })
   } catch (error) {
-    console.error('Error:', error)
-    return NextResponse.json({ error: 'Failed to submit' }, { status: 500 })
+    console.error('Error submitting book suggestion:', error)
+    return NextResponse.json({ 
+      error: 'Failed to submit', 
+      details: error instanceof Error ? error.message : 'Unknown error' 
+    }, { status: 500 })
   }
 }

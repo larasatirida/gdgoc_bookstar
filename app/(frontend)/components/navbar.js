@@ -48,7 +48,9 @@ export default function Navbar() {
                 setBookAuthor("");
                 setSuggestOpen(false);
             } else {
-                alert('Gagal mengirim saran. Silakan coba lagi.');
+                const data = await response.json();
+                console.error('API Error:', data);
+                alert(`Gagal mengirim saran: ${data.details || data.error || 'Unknown error'}`);
             }
         } catch (error) {
             console.error('Error submitting suggestion:', error);
