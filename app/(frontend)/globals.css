@@ -1,0 +1,235 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-inter: "Inter", sans-serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter);
+}
+
+@utility d1regular {
+  font-family: var(--font-inter);
+  font-size: 57px;
+  font-weight: 400;
+  line-height: 64px;
+}
+
+@utility d1medium {
+  font-family: var(--font-inter);
+  font-size: 57px;
+  font-weight: 500;
+  line-height: 64px;
+}
+
+@utility d1semibold {
+  font-family: var(--font-inter);
+  font-size: 57px;
+  font-weight: 600;
+  line-height: 64px;
+}
+
+@utility d2regular {
+  font-family: var(--font-inter);
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 52px;
+}
+
+@utility d2medium {
+  font-family: var(--font-inter);
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 52px;
+}
+
+@utility d2semibold {
+  font-family: var(--font-inter);
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 52px;
+}
+
+@utility h1regular {
+  font-family: var(--font-inter);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+@utility h1medium {
+  font-family: var(--font-inter);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+@utility h1semibold {
+  font-family: var(--font-inter);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+@utility h2regular {
+  font-family: var(--font-inter);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+@utility h2medium {
+  font-family: var(--font-inter);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+@utility h2semibold {
+  font-family: var(--font-inter);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+@utility h3regular {
+  font-family: var(--font-inter);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+@utility h3medium {
+  font-family: var(--font-inter);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+@utility h3semibold {
+  font-family: var(--font-inter);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+@utility titleregular {
+  font-family: var(--font-inter);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@utility titlemedium {
+  font-family: var(--font-inter);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+@utility titlesemibold {
+  font-family: var(--font-inter);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+@utility bodyregular {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@utility bodymedium {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+@utility bodysemibold {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+@utility lableregular {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+@utility lablemedium {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+@utility lablesemibold {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+@utility c1regular {
+  font-family: var(--font-inter);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+@utility c1medium {
+  font-family: var(--font-inter);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+@utility c1semibold {
+  font-family: var(--font-inter);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+@utility c2regular {
+  font-family: var(--font-inter);
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+}
+
+@utility c2medium {
+  font-family: var(--font-inter);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 13px;
+}
+
+@utility c2semibold {
+  font-family: var(--font-inter);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 13px;
+}
